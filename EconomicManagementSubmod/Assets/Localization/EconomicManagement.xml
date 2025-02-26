@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageCollection Tag="en_US">
+  <Row Tag="TXT_KEY_ECONMGMT_MAIN_TITLE">
+    <Text>Economic Management</Text>
+  </Row>
+  <Row Tag="TXT_KEY_ECONMGMT_LOAN_WINDOW_TITLE">
+    <Text>Loan Options</Text>
+  </Row>
+  <Row Tag="TXT_KEY_ECONMGMT_BORROW_AMOUNT">
+    <Text>Borrow Amount</Text>
+  </Row>
+  <Row Tag="TXT_KEY_ECONMGMT_LOAN_DURATION">
+    <Text>Loan Duration (Turns)</Text>
+  </Row>
+  <Row Tag="TXT_KEY_ECONMGMT_INTEREST_RATE">
+    <Text>Interest per Turn (Gold)</Text>
+  </Row>
+  <Row Tag="TXT_KEY_CONFIRM">
+    <Text>Confirm</Text>
+  </Row>
+  <Row Tag="TXT_KEY_CLOSE">
+    <Text>Close</Text>
+  </Row>
+</LanguageCollection>

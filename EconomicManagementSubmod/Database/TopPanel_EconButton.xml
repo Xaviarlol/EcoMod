@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Context Name="EconTopPanelButton" ColorSet="Beige_Black_Alpha" Font="TwCenMT16" FontStyle="Shadow">
+  <!-- This stack is anchored to the top-left of the screen -->
+  <Stack id="EconTopPanelStack" Anchor="L,T" Offset="10,10" Padding="5">
+    <TextButton id="EconTopPanelButton" String="ECONMGMT_BUTTON" ToolTip="[TXT_KEY_ECONMGMT_BUTTON_TT]" />
+  </Stack>
+</Context>

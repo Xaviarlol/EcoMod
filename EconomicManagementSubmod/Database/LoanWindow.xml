@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Context ColorSet="Beige_Black_Alpha" Font="TwCenMT16" FontStyle="Shadow" Name="LoanWindow">
+  <Window id="LoanWindow" size="500,300" visible="false">
+    <!-- Background -->
+    <Image id="LoanBG" texture="Assets/UI/Backgrounds/EconMgmtBG.dds" size="500,300" />
+    <!-- Title -->
+    <Text id="LoanTitle" text="Loan Information" x="20" y="20" font="TwCenMT20" />
+    
+    <!-- Borrow Amount Section -->
+    <Text id="BorrowAmountLabel" text="Borrow Amount: 0 Gold" x="20" y="70" font="TwCenMT16" />
+    <!-- (You can add an input field or slider here that calls a Lua function to set the borrow amount) -->
+    
+    <!-- Loan Duration Section -->
+    <Text id="LoanDurationLabel" text="Duration: 0 turns" x="20" y="110" font="TwCenMT16" />
+    <!-- (Add input control for duration) -->
+    
+    <!-- Interest Rate Section -->
+    <Text id="InterestRateLabel" text="Interest per Turn: 0 Gold" x="20" y="150" font="TwCenMT16" />
+    <!-- (Add input control for interest rate) -->
+    
+    <!-- Confirm Button -->
+    <Button id="ConfirmLoanButton" x="20" y="200" onClick="OnConfirmLoan">
+      <Text text="Confirm" />
+    </Button>
+    <!-- Close Button -->
+    <Button id="CloseLoanButton" x="450" y="10" onClick="OnCloseLoanWindow">
+      <Text text="Close" />
+    </Button>
+  </Window>
+</Context>

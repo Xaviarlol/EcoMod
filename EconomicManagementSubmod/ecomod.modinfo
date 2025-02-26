@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Mod id="22facfed-02da-4158-877c-d72bf010b0bg" version="1.0">
+  <Properties>
+    <Name>Economic Management Submod</Name>
+    <Teaser>An advanced economic management tool for managing loans, taxes, and policies.[NEWLINE][NEWLINE][COLOR_POSITIVE_TEXT]Compatible with Vanilla, GnK, BNW[ENDCOLOR]</Teaser>
+    <Description>This submod adds a new level of government economic management. It provides a dedicated UI for handling loans—including setting a borrow amount (capped by era), loan duration, and interest rate (gold per turn)—as well as additional features for adjusting tax policies and debt management.</Description>
+    <Authors>Your Name</Authors>
+    <HideSetupGame>0</HideSetupGame>
+    <AffectsSavedGames>0</AffectsSavedGames>
+    <MinCompatibleSaveVersion>0</MinCompatibleSaveVersion>
+    <SupportsSinglePlayer>1</SupportsSinglePlayer>
+    <SupportsMultiplayer>1</SupportsMultiplayer>
+    <SupportsHotSeat>1</SupportsHotSeat>
+    <SupportsMac>1</SupportsMac>
+    <ReloadAudioSystem>0</ReloadAudioSystem>
+    <ReloadLandmarkSystem>0</ReloadLandmarkSystem>
+    <ReloadStrategicViewSystem>0</ReloadStrategicViewSystem>
+    <ReloadUnitSystem>0</ReloadUnitSystem>
+  </Properties>
+  <Dependencies />
+  <References />
+  <Blocks />
+  <Files>
+    <File import="1">Assets/UI/Icons/Econ_Icon.dds</File>
+    <File import="1">Assets/UI/Backgrounds/EconMgmtBG.dds</File>
+    <File import="0">Assets/Localization/EconomicManagement.xml</File>
+    <File import="1">Database/EconManagementMain.xml</File>
+    <File import="1">Database/LoanWindow.xml</File>
+    <File import="1">Lua/EconManagementMain.lua</File>
+    <File import="1">Lua/LoanWindowLogic.lua</File>
+    <File import="0">SQL/EconomicManagement.sql</File>
+  </Files>
+  <Actions>
+    <OnModActivated>
+      <UpdateDatabase>SQL/EconomicManagement.sql</UpdateDatabase>
+      <UpdateDatabase>Assets/Localization/EconomicManagement.xml</UpdateDatabase>
+    </OnModActivated>
+  </Actions>
+  <EntryPoints>
+    <EntryPoint type="InGameUIAddin" file="Database/EconManagementMain.xml">
+      <Name>Economic Management</Name>
+      <Description>Main Economic Management UI</Description>
+    </EntryPoint>
+	<EntryPoint type="InGameUIAddin" file="Database/TopPanel_EconButton.xml">
+  <Name>Econ Top Panel Button</Name>
+  <Description>Button to open Economic Management window</Description>
+</EntryPoint>
+  </EntryPoints>
+</Mod>

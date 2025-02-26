@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Context ColorSet="Beige_Black_Alpha" Font="TwCenMT16" FontStyle="Shadow" Name="EconManagementMain">
+  <Window id="EconManagementMainWindow" size="600,400" visible="false">
+    <!-- Background Box using a style from the Economics mod -->
+    <Box id="WindowBackground" Style="BGBlock_ClearTopBar" size="600,400" />
+
+    <!-- Title Text -->
+    <Text id="Title" text="[TXT_KEY_ECONMGMT_MAIN_TITLE]" x="20" y="20" font="TwCenMT20" />
+
+    <!-- Mod Icon -->
+    <Image id="ModIcon" texture="Assets/UI/Icons/Econ_Icon.dds" size="64,64" x="520" y="20" />
+
+    <!-- Button to Open the Loan Window -->
+    <Button id="OpenLoanButton" x="20" y="100" onClick="OnOpenLoanWindow">
+      <Text text="Loan Options" />
+    </Button>
+
+    <!-- Button to Activate the Main Economic Management Window -->
+    <Button id="EconMgmtButton" x="20" y="150" onClick="OnEconMgmtButtonClicked">
+      <Text text="[TXT_KEY_ECONMGMT_BUTTON]" />
+    </Button>
+
+    <!-- Close Button -->
+    <Button id="CloseButton" x="570" y="10" onClick="OnCloseMainWindow">
+      <Text text="[TXT_KEY_CLOSE]" />
+    </Button>
+  </Window>
+</Context>
