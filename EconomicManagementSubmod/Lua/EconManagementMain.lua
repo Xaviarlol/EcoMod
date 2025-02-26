@@ -20,7 +20,7 @@ function OnOpenLoanWindow()
     OpenLoanWindow()  -- This function is defined in LoanWindowLogic.lua
 end
 
--- Input handler to open the window with F12 for testing purposes
+-- Input handler to open the window with the '9' key for testing purposes
 function InputHandler(uiMsg, wParam, lParam)
     if uiMsg == KeyEvents.KeyDown then
         if wParam == Keys.VK_9 then
@@ -38,7 +38,7 @@ function InitializeEconManagementMain()
     -- Hide the main window at start.
     Controls.EconManagementMainWindow:SetHide(true)
 
-    -- Register button callbacks (for buttons that are visible within the window, if you eventually integrate them)
+    -- Register button callbacks for controls defined in your XML
     if Controls.EconMgmtButton then
         Controls.EconMgmtButton:RegisterCallback(Mouse.eLClick, OnEconMgmtButtonClicked)
     end
@@ -51,11 +51,6 @@ function InitializeEconManagementMain()
 end
 
 InitializeEconManagementMain()
-
--- Callback for opening the Economic Management window.
-function OnEconMgmtButtonClicked()
-    OpenEconManagementMainWindow()
-end
 
 -- Registers the top panel button's callback.
 function InitializeEconTopPanelButton()
